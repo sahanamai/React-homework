@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/React-homework/static/css/main.fd8c2c39.css",
+    "main.js": "/React-homework/static/js/main.ee30b20d.js",
+    "static/media/garden proud.png": "/React-homework/static/media/garden proud.e06eace33c7b7b417af8.png",
+    "static/media/project1.png": "/React-homework/static/media/project1.fa2ae9a5a03ea30545f5.png",
+    "static/media/weather2.png": "/React-homework/static/media/weather2.f21d63c623c94ef3b541.png",
+    "static/media/Resume.PDF": "/React-homework/static/media/Resume.128e7bddc99bf9e00b29.PDF",
+    "static/media/avatar.jpg": "/React-homework/static/media/avatar.434da313d0b45fe14330.jpg",
+    "index.html": "/React-homework/index.html",
+    "main.fd8c2c39.css.map": "/React-homework/static/css/main.fd8c2c39.css.map",
+    "main.ee30b20d.js.map": "/React-homework/static/js/main.ee30b20d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd8c2c39.css",
+    "static/js/main.ee30b20d.js"
+  ]
+}
