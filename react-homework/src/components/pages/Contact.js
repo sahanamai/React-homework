@@ -1,24 +1,20 @@
 import React from 'react';
+import '../../styles/Pages.css';
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact </h1>
-      <div class="col-4">
-  <label for="exampleFormControlInput1" class="form-label">Name</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name"/>
-</div>
-<div class="col-4">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" />
-</div>
-<div class="col-4">
-  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
-<div class="col-5">
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </div>
+    <div class="page-style">
+      <h1>Contact</h1>
+      <br></br>
+      <form action="https://formspree.io/f/xleaagkl"  method="POST">
+        <label> Name</label><br></br>
+        <input type="name" name="_replyto" required/><br></br>
+        <label> Email</label><br></br>
+        <input type="email" name="_replyto" required/><br></br>
+        <label> Message</label><br></br>
+        <textarea name="message" required></textarea><br></br>
+        <button type="submit">Send</button>
+      </form>
     </div>
   );
 }

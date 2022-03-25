@@ -1,60 +1,34 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
-import Portfolio from './pages/portfolio';
-import About from './pages/About';
+import Home from './pages/Home';
+import Work from './pages/Work';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
-const projects = [
-  {
-    id: 1,
-    name: "Project1",
-    image: "../Assests/images/code quiz1.png",
-    description:"jhhhh"
-  },
-  {
-    id: 2,
-    name: "Project2",
-   image:"../Assests/images/day scheduler.png",
-   description:"jhhhh"
-  },
-  {
-    id: 3,
-    name: "project3",
-    image:"../Assests/images/project-1.png",
-    description:"jhhhh"
-  },
-  {
-    id: 4,
-    name: "project4",
-    image:"",
-    description:"jhhhh"
-  },
-]
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('About');
+  const [currentPage, setCurrentPage] = useState('Home');
 
-  // TODO: Add a comment describing the functionality of this method
+  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
-    if (currentPage === 'Contact') {
-      return <Contact  />;
+    if (currentPage === 'Home') {
+      return <Home />;
     }
-    if (currentPage === 'Portfolio') {
-      return <Portfolio projects={projects}/>;
+    if (currentPage === 'Work') {
+      return <Work />;
     }
     if (currentPage === 'Resume') {
-      return <Resume/>;//blog
+      return <Resume />;
     }
-    return <About />;
+    return <Contact />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-      {/* // TODO: Add a comment describing what we are passing as props */}
+      {/* We are passing the currentPage from state and the function to update it */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* // TODO: Add a comment explaining what is happening on the following line */}
+      {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
     </div>
   );

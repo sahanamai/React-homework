@@ -1,0 +1,35 @@
+header{
+    width:100%;
+    background:  rgb(212, 212, 236);
+    height:100px;
+}
+.active {
+   font-style:oblique;
+  font-weight: bold;
+  font-variant: initial;
+}
+span{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    margin-left:200px;
+}
+.nav-list{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-variant:small-caps;
+    display: flex;
+    font-size: 30px;
+    float:right;
+    list-style-type: none;
+   margin-right:200px;
+}
+.nav-item a {
+    
+    float:left;
+    background-blend-mode: soft-light;
+    text-decoration:none;
+    color:black;
+    margin-left: 50px;
+}
+.nav-item a:hover{
+color: black;
+}
